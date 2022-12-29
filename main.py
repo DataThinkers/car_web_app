@@ -2,11 +2,12 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import datetime
+import xgboost as xgb
 
 import joblib
-
-model = joblib.load('car_price_predictor')
 date_time = datetime.datetime.now()
+model = xgb.XGBRegressor()
+model.load_model('xgb_model.json')
 
 def main(): 
     html_temp="""
