@@ -1,6 +1,5 @@
-streamlit
 joblib
-sklearn
+scikit-learn
 xgboost
 
 
